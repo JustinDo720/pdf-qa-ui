@@ -37,3 +37,15 @@ Color Space:
  - Instead of setting a Column to Bot and another to User messages:
    - We now create a Row and use `className='offset-4'` to push our div to the end 
  - Upon submit you should set Send button to loading + add loading for bot message
+
+## 09/03
+
+Reduced chat system into a single **array**
+- Before we had BOT arr + USER arr but we reduced it to display messages **row-by-row** 
+- Adding loading and **Bootstrap Placeholder + Spinners** 
+
+Instead of Placeholders in the **message loop**
+- We moved it to it's an seperate block
+- This way the load will always appear then become replaced by the new message 
+
+<img src='rag_pipeline_ui.gif'>
